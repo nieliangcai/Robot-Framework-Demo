@@ -8,4 +8,3 @@ Suite Teardown   close browser
 *** Test Cases ***
 Test Login
     登录
-    close browser
