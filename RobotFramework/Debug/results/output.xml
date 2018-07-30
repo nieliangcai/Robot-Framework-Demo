@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.3 on win32)" generated="20180713 16:59:01.760">
+<suite id="s1" name="Arguments" source="D:\NNUIFramework\RobotFramework\Debug\Arguments.robot">
+<test id="s1-t1" name="Test title">
+<kw name="Provided precondition">
+<arguments>
+<arg>1</arg>
+<arg>2</arg>
+<arg>3</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${a}</arg>
+</arguments>
+<msg timestamp="20180713 16:59:01.806" level="INFO">1</msg>
+<status status="PASS" starttime="20180713 16:59:01.806" endtime="20180713 16:59:01.807"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${b}</arg>
+</arguments>
+<msg timestamp="20180713 16:59:01.807" level="INFO">2</msg>
+<status status="PASS" starttime="20180713 16:59:01.807" endtime="20180713 16:59:01.807"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${c}</arg>
+</arguments>
+<msg timestamp="20180713 16:59:01.807" level="INFO">3</msg>
+<status status="PASS" starttime="20180713 16:59:01.807" endtime="20180713 16:59:01.808"></status>
+</kw>
+<status status="PASS" starttime="20180713 16:59:01.806" endtime="20180713 16:59:01.808"></status>
+</kw>
+<status status="PASS" starttime="20180713 16:59:01.805" endtime="20180713 16:59:01.808" critical="yes"></status>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" starttime="20180713 16:59:01.766" endtime="20180713 16:59:01.808"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Arguments">Arguments</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
