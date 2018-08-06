@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.3 on win32)" generated="20180726 15:25:29.902">
-<suite id="s1" name="Login" source="D:\NNUIFramework\RobotFramework\Page\Login.robot">
+<robot generator="Robot 3.0.4 (Python 3.6.3 on win32)" generated="20180802 09:31:06.504">
+<suite id="s1" name="Login" source="C:\Users\HP\Desktop\guest\NNUIFramework\RobotFramework\Page\Login.robot">
 <test id="s1-t1" name="Test Login">
 <kw name="登录" library="Login_keywords">
 <kw name="Open Browser" library="Selenium2Library">
@@ -9,75 +9,48 @@
 <arg>${url}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20180726 15:25:30.698" level="INFO">Opening browser 'chrome' to base url 'http://115.29.234.80:8110/'.</msg>
-<status status="PASS" starttime="20180726 15:25:30.697" endtime="20180726 15:25:47.371"></status>
+<msg timestamp="20180802 09:31:07.085" level="INFO">Opening browser 'chrome' to base url 'http://115.29.234.80:8110/'.</msg>
+<status status="PASS" starttime="20180802 09:31:07.085" endtime="20180802 09:31:34.616"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20180726 15:25:47.371" endtime="20180726 15:25:48.504"></status>
+<status status="PASS" starttime="20180802 09:31:34.616" endtime="20180802 09:31:35.733"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>xpath=//*[@id="txtUserName"]</arg>
+<arg>${login_user}</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20180726 15:25:48.504" level="INFO">Typing text 'admin' into text field 'xpath=//*[@id="txtUserName"]'.</msg>
-<status status="PASS" starttime="20180726 15:25:48.504" endtime="20180726 15:25:48.772"></status>
+<msg timestamp="20180802 09:31:35.734" level="INFO">Typing text 'admin' into text field 'xpath=//*[@id="txtUserName"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180802 09:31:36.200" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180802 09:31:35.814" endtime="20180802 09:31:36.200"></status>
 </kw>
-<kw name="Input Password" library="Selenium2Library">
-<doc>Types the given password into text field identified by ``locator``.</doc>
-<arguments>
-<arg>xpath=//*[@id="txtPassword"]</arg>
-<arg>${password}</arg>
-</arguments>
-<msg timestamp="20180726 15:25:48.773" level="INFO">Typing password into text field 'xpath=//*[@id="txtPassword"]'.</msg>
-<status status="PASS" starttime="20180726 15:25:48.772" endtime="20180726 15:25:48.898"></status>
+<msg timestamp="20180802 09:31:36.327" level="FAIL">Element with locator 'xpath=//*[@id="txtUserName"]' not found.</msg>
+<status status="FAIL" starttime="20180802 09:31:35.733" endtime="20180802 09:31:36.328"></status>
 </kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>xpath=//*[@id="btnLogin"]</arg>
-</arguments>
-<msg timestamp="20180726 15:25:48.899" level="INFO">Clicking button 'xpath=//*[@id="btnLogin"]'.</msg>
-<status status="PASS" starttime="20180726 15:25:48.899" endtime="20180726 15:26:13.721"></status>
+<status status="FAIL" starttime="20180802 09:31:07.084" endtime="20180802 09:31:36.328"></status>
 </kw>
-<kw name="Get Title" library="Selenium2Library">
-<doc>Returns the title of current page.</doc>
-<assign>
-<var>${title}</var>
-</assign>
-<msg timestamp="20180726 15:26:13.729" level="INFO">${title} = 电务生产调度指挥系统</msg>
-<status status="PASS" starttime="20180726 15:26:13.721" endtime="20180726 15:26:13.729"></status>
-</kw>
-<kw name="Should Be Equal" library="BuiltIn">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${title}</arg>
-<arg>电务生产调度指挥系统</arg>
-</arguments>
-<status status="PASS" starttime="20180726 15:26:13.729" endtime="20180726 15:26:13.730"></status>
-</kw>
-<status status="PASS" starttime="20180726 15:25:30.696" endtime="20180726 15:26:13.730"></status>
-</kw>
-<status status="PASS" starttime="20180726 15:25:30.695" endtime="20180726 15:26:13.731" critical="yes"></status>
+<status status="FAIL" starttime="20180802 09:31:07.083" endtime="20180802 09:31:36.328" critical="yes">Element with locator 'xpath=//*[@id="txtUserName"]' not found.</status>
 </test>
 <kw name="Close Browser" library="Selenium2Library" type="teardown">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20180726 15:26:13.733" endtime="20180726 15:26:16.799"></status>
+<status status="PASS" starttime="20180802 09:31:36.330" endtime="20180802 09:31:39.388"></status>
 </kw>
 <doc>登录模板制作</doc>
-<status status="PASS" starttime="20180726 15:25:29.941" endtime="20180726 15:26:16.799"></status>
+<status status="FAIL" starttime="20180802 09:31:06.508" endtime="20180802 09:31:39.388"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Login">Login</stat>
+<stat pass="0" fail="1" id="s1" name="Login">Login</stat>
 </suite>
 </statistics>
 <errors>
