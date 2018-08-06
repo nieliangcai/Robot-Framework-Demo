@@ -6,3 +6,5 @@ ${password}  888888     #密码
 ${login_user}     xpath=//*[@id="txtUserName"]          #账号
 ${login_pwd}      xpath=//*[@id="txtPassword"]          #密码
 ${login_submit}   xpath=//*[@id="btnLogin"]             #登录按钮
+
+${login_submit1}   xpath=//*[@id="btnLogin"]             #登录按钮
