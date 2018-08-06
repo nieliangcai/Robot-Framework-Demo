@@ -1,5 +1,5 @@
 *** Variables ***
-${url}  http://115.29.234.80:8110/
+${url}  http://115.29.234.80:8110/  #URL
 ${username}  admin      #账号
 ${password}  888888     #密码
 
