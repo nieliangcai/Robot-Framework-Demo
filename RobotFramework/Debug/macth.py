@@ -14,11 +14,10 @@
 #     print("NG")
 import re
 
-with open('search.txt','r') as f:
+with open('search.txt', 'r') as f:
     lines = f.readlines()
     string = ''
     for i in range(len(lines)):
         line = lines[i].strip('\n')
         string += line
     print(string.count(' '))
-
