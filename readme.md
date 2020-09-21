@@ -17,7 +17,7 @@
         testcase引用Setting、Variables和Keywords来实现一个case
         运行的时候，指定项目即可，robot framework框架会自动去寻找带有*** Test Cases ***的并且符合运行命令的case来运行
     5. 日常运行，使用单线程运行即可，robot --help可以查看robot相关运行命令
-    6. 使用多线程运行case， 使用pabot方式运行，pabot  --processes 2
+    6. 使用多线程运行case， 使用pabot方式运行，pabot --processes 2 -d results testCase
         ---- robotframework-pabot
 
 ### 注意事项
