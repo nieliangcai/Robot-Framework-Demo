@@ -1,0 +1,5 @@
+RobotFramework/results/*
+RobotFramework/testcase/results/*
+*.log
+*.html
+*.xml
