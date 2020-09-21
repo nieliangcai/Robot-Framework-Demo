@@ -19,3 +19,9 @@
     5. 日常运行，使用单线程运行即可，robot --help可以查看robot相关运行命令
     6. 使用多线程运行case， 使用pabot方式运行，pabot  --processes 2
         ---- robotframework-pabot
+
+### 注意事项
+    1. 安装intellibot后，输入代码没有提示，但是可以运行代码
+        将intellibot卸载后，安装IntelliBot @SeleniumLibrary就有了提示
+    2. 使用后，突然没有代码提示，也不能查看深层代码（ctrl+左键）
+        关闭pycharm，重启就好了
