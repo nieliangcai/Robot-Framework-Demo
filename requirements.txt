@@ -18,7 +18,7 @@ more-itertools==8.4.0
 numpy==1.19.1
 packaging==20.4
 PicoTest==0.2.0
-Pillow==7.2.0
+Pillow==9.0.0
 pluggy==0.13.1
 psutil==5.7.2
 py==1.9.0
