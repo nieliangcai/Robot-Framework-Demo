@@ -4,7 +4,7 @@ apipkg==1.5
 Appium-Python-Client==1.0.2
 attrs==19.3.0
 beautifulsoup4==4.9.1
-certifi==2020.6.20
+certifi==2022.12.7
 chardet==3.0.4
 Cmdopt==0.2.0
 execnet==1.7.1
